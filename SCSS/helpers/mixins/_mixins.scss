@@ -1,0 +1,54 @@
+@use "../variables/variables";
+
+@mixin center {
+	justify-content: center;
+	text-align: center;
+}
+@mixin background {
+	background-color: variables.$background;
+	color: variables.$font;
+	width: 100%;
+	height: 160px;
+}
+@mixin font-big {
+	width: 100%;
+	padding-top: 30px;
+	font-size: 2rem;
+	font-family: "Rock Salt", cursive;
+	text-transform: capitalize;
+}
+@mixin font-small {
+	font-size: 1rem;
+	font-family: "Roboto", sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: variables.$font;
+}
+
+@mixin undline {
+	a {
+		color: variables.$font;
+		text-decoration: none;
+		font-size: 30px;
+		text-transform: uppercase;
+		position: relative;
+		display: inline-block;
+		&::before {
+			content: "";
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			height: 3px;
+			background-color: variables.$font;
+			border-radius: 4px;
+			scale: 0 1;
+			transform-origin: right;
+			transition: scale 0.5s;
+		}
+		&:hover::before {
+			scale: 1;
+			transform-origin: left;
+		}
+	}
+}

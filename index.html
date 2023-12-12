@@ -1,17 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">               <!-- Ændre sprog -->
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/mainstylesheet.css">
-    <!-- Java -->
-    <script src="./assets/js/java.js" defer></script>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- CSS -->
+		<link rel="stylesheet" href="./SCSS/main.scss" />
+		<!-- Java -->
+		<script src="./assets/javaScript/burgermenu.js" defer></script>
 
-    <title>Document</title>    <!-- Ændre titel -->
+		<script
+			src="https://kit.fontawesome.com/11e7a87280.js"
+			crossorigin="anonymous"></script>
+		<title>My own makeUp shop</title>
+	</head>
+	<body>
+		<!-- Burgermenu-->
+		<span class="menu-bar" id="openMenu">
+			<span id="bg-wrapper">
+				<i class="bg" id="line1"></i>
+				<i class="bg" id="line2"></i>
+				<i class="bg" id="line3"></i>
+			</span>
+		</span>
 
-</head>
-<body>
-
-</body>
+		<!-- burgermenuens menu-->
+		<nav id="menu" class="hide menu">
+			<span id="innerMenu" class="innerMenu">
+				<ul class="menu-mobil">
+					<li><a class="link" href="kategori1">kategori 1</a></li>
+					<li><a class="link" href="kategori2">kategori 2</a></li>
+					<li><a class="link" href="kategori3">kategori 3</a></li>
+					<li><a class="link" href="kategori4">kategori 4</a></li>
+					<li><a class="link" href="kategori5">kategori 5</a></li>
+				</ul>
+			</span>
+		</nav>
+	</body>
 </html>

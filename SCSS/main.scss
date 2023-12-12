@@ -1,0 +1,21 @@
+@use "./pages/home";
+@use "./helpers/variables/variables";
+
+// fonts
+@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Roboto:wght@100;300;500&display=swap");
+//font-family: 'Handlee', cursive;
+//font-family: 'Roboto', sans-serif;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	background-color: black;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
