@@ -11,15 +11,22 @@
 	display: flex;
 	justify-content: space-between;
 	.left-sec {
+		a {
+			text-decoration: none;
+			color: inherit;
+		}
 		background-color: variables.$dark;
 		padding: 20px 10px;
 	}
-}
-.right-sec {
-	i {
-		color: variables.$light;
-		font-size: 2em;
-		padding: 25px 15px;
+	.right-sec {
+		background-color: variables.$dark;
+
+		i {
+			background-color: variables.$dark;
+			color: variables.$light;
+			font-size: 2em;
+			padding: 25px 15px;
+		}
 	}
 }
 
@@ -40,13 +47,18 @@
 		margin: 2rem auto;
 		ul {
 			display: block;
+			background-color: variables.$dark;
+
 			li {
 				@include mixins.undline;
 				list-style: none;
 				padding: 0.8rem;
+				background-color: variables.$dark;
+
 				text-align: center;
 				a {
 					color: variables.$light;
+					background-color: variables.$dark;
 				}
 			}
 		}

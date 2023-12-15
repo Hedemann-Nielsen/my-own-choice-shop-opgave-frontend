@@ -1,0 +1,52 @@
+@use "../../helpers/mixins/mixins";
+@use "../../helpers//variables/variables";
+
+.site-footer {
+	background-color: variables.$dark;
+	color: variables.$light;
+	padding: 20px;
+	text-align: center;
+	.footer-content {
+		background-color: variables.$dark;
+		.copyright,
+		.contact-info,
+		.social-icons,
+		.payment-icons {
+			flex: 1 1 25%;
+			margin: 10px;
+			background-color: variables.$dark;
+		}
+		.contact-info p,
+		.social-icons p,
+		.payment-icons p {
+			background-color: variables.$dark;
+		}
+		.social-icons a,
+		.payment-icons i {
+			color: variables.$light;
+			background-color: variables.$dark;
+
+			font-size: 20px;
+			margin-right: 10px;
+			.fa-facebook,
+			.fa-instagram,
+			.fa-twitter,
+			.fa-pinterest,
+			.fa-linkedin,
+			.fa-cc-visa,
+			.fa-cc-mastercard,
+			.fa-cc-amex {
+				color: variables.$light;
+				background-color: variables.$dark;
+				font-size: 20px;
+				margin-right: 10px;
+			}
+		}
+	}
+	.disclaimer p {
+		margin-top: 20px;
+		background-color: variables.$dark;
+	}
+}
+
+/* Style for Font Awesome icons */

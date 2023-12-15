@@ -1,0 +1,48 @@
+@use "../../helpers/mixins/mixins";
+@use "../../helpers//variables/variables";
+
+#highlights {
+	h2 {
+		margin-bottom: 20px;
+	}
+
+	#gallery-container {
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+
+		button {
+			font-size: 5em;
+			padding: 10px;
+			background: none;
+			border: none;
+			color: variables.$light-brown;
+			cursor: pointer;
+		}
+
+		#prev-btn {
+			position: absolute;
+			left: 10px;
+		}
+
+		#next-btn {
+			position: absolute;
+			right: 10px;
+		}
+
+		#highlightsGallery {
+			display: flex;
+			overflow-x: hidden;
+			padding: 20px;
+			div {
+				flex: 0 0 100%;
+				transition: transform 0.3s ease;
+			}
+			img {
+				width: 100%;
+			}
+		}
+	}
+}

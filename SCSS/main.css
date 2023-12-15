@@ -12,8 +12,15 @@
   background-color: #212226;
   padding: 20px 10px;
 }
-
-.right-sec i {
+.menu-top-bar .left-sec a {
+  text-decoration: none;
+  color: inherit;
+}
+.menu-top-bar .right-sec {
+  background-color: #212226;
+}
+.menu-top-bar .right-sec i {
+  background-color: #212226;
   color: #f2f2f0;
   font-size: 2em;
   padding: 25px 15px;
@@ -37,17 +44,24 @@
 }
 .menu .innerMenu ul {
   display: block;
+  background-color: #212226;
 }
 .menu .innerMenu ul li {
   list-style: none;
   padding: 0.8rem;
+  background-color: #212226;
   text-align: center;
 }
 .menu .innerMenu ul li a {
+  background-color: #212226;
+  color: #f2f2f0;
+  text-transform: capitalize;
+  font-family: "Handlee", cursive;
+  font-size: 2em;
+  padding: 5px 0;
   color: #f2f2f0;
   text-decoration: none;
   font-size: 30px;
-  text-transform: uppercase;
   position: relative;
   display: inline-block;
 }
@@ -70,6 +84,7 @@
 }
 .menu .innerMenu ul li a {
   color: #f2f2f0;
+  background-color: #212226;
 }
 
 @keyframes goRight {
@@ -86,6 +101,153 @@
 
 .show {
   display: block;
+}
+
+#highlights h2 {
+  margin-bottom: 20px;
+}
+#highlights #gallery-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#highlights #gallery-container button {
+  font-size: 5em;
+  padding: 10px;
+  background: none;
+  border: none;
+  color: #bf9969;
+  cursor: pointer;
+}
+#highlights #gallery-container #prev-btn {
+  position: absolute;
+  left: 10px;
+}
+#highlights #gallery-container #next-btn {
+  position: absolute;
+  right: 10px;
+}
+#highlights #gallery-container #highlightsGallery {
+  display: flex;
+  overflow-x: hidden;
+  padding: 20px;
+}
+#highlights #gallery-container #highlightsGallery div {
+  flex: 0 0 100%;
+  transition: transform 0.3s ease;
+}
+#highlights #gallery-container #highlightsGallery img {
+  width: 100%;
+}
+
+#most-popular {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+}
+#most-popular div {
+  position: relative;
+  background-color: white;
+  border: 1.5px solid rgba(33, 34, 38, 0.5333333333);
+  border-radius: 8px;
+  box-shadow: 4px 7px 24px -9px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 4px 7px 24px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px 7px 24px -9px rgba(0, 0, 0, 0.75);
+  padding: 10px;
+}
+#most-popular div a {
+  text-decoration: none;
+  color: inherit;
+}
+#most-popular div a img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  background-color: white;
+}
+#most-popular div h4 {
+  font-size: 1.5em;
+  background-color: white;
+  padding: 10px;
+  font-family: "Handlee", cursive;
+}
+#most-popular div p {
+  background-color: white;
+  padding: 10px 10px 50px 10px;
+}
+#most-popular div h5 {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background-color: white;
+  font-family: "Handlee", cursive;
+  font-size: 1.5em;
+  text-align: right;
+}
+
+.site-footer {
+  background-color: #212226;
+  color: #f2f2f0;
+  padding: 20px;
+  text-align: center;
+}
+.site-footer .footer-content {
+  background-color: #212226;
+}
+.site-footer .footer-content .copyright,
+.site-footer .footer-content .contact-info,
+.site-footer .footer-content .social-icons,
+.site-footer .footer-content .payment-icons {
+  flex: 1 1 25%;
+  margin: 10px;
+  background-color: #212226;
+}
+.site-footer .footer-content .contact-info p,
+.site-footer .footer-content .social-icons p,
+.site-footer .footer-content .payment-icons p {
+  background-color: #212226;
+}
+.site-footer .footer-content .social-icons a,
+.site-footer .footer-content .payment-icons i {
+  color: #f2f2f0;
+  background-color: #212226;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.site-footer .footer-content .social-icons a .fa-facebook,
+.site-footer .footer-content .social-icons a .fa-instagram,
+.site-footer .footer-content .social-icons a .fa-twitter,
+.site-footer .footer-content .social-icons a .fa-pinterest,
+.site-footer .footer-content .social-icons a .fa-linkedin,
+.site-footer .footer-content .social-icons a .fa-cc-visa,
+.site-footer .footer-content .social-icons a .fa-cc-mastercard,
+.site-footer .footer-content .social-icons a .fa-cc-amex,
+.site-footer .footer-content .payment-icons i .fa-facebook,
+.site-footer .footer-content .payment-icons i .fa-instagram,
+.site-footer .footer-content .payment-icons i .fa-twitter,
+.site-footer .footer-content .payment-icons i .fa-pinterest,
+.site-footer .footer-content .payment-icons i .fa-linkedin,
+.site-footer .footer-content .payment-icons i .fa-cc-visa,
+.site-footer .footer-content .payment-icons i .fa-cc-mastercard,
+.site-footer .footer-content .payment-icons i .fa-cc-amex {
+  color: #f2f2f0;
+  background-color: #212226;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.site-footer .disclaimer p {
+  margin-top: 20px;
+  background-color: #212226;
+}
+
+/* Style for Font Awesome icons */
+.categori1-container div {
+  padding: 20px 0;
+}
+.categori1-container div a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .user-login {
@@ -127,17 +289,21 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: "Roboto", sans-serif;
+  background-color: #f1f1f1;
 }
 
 h1 {
   background-color: #212226;
   color: #f2f2f0;
+  text-transform: capitalize;
   font-family: "Handlee", cursive;
   font-size: 2em;
+  padding: 5px 0;
 }
 
 h2 {
   font-size: 1.5rem;
+  padding: 5px 0;
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   text-decoration: none;

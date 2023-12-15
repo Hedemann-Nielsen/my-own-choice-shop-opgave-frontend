@@ -8,6 +8,7 @@
 		<!-- Java -->
 		<script src="./assets/javaScript/burgermenu.js" defer></script>
 		<script src="./assets/javaScript/mostpopular.js" defer></script>
+		<script src="./assets/javaScript/highlights.js" defer></script>
 
 		<script
 			src="https://kit.fontawesome.com/11e7a87280.js"
@@ -17,7 +18,7 @@
 	<body>
 		<header class="menu-top-bar">
 			<section class="left-sec">
-				<h1>My Own Shop</h1>
+				<a href="index.html"><h1>My Own Shop</h1></a>
 			</section>
 			<section class="right-sec">
 				<a href="user.html"><i class="fa-solid fa-user"></i></a>
@@ -27,26 +28,66 @@
 				<nav id="menu" class="hide menu">
 					<span id="innerMenu" class="innerMenu">
 						<ul class="menu-mobil">
-							<li><a class="link" href="kategori1.html">kategori 1</a></li>
-							<li><a class="link" href="kategori2">kategori 2</a></li>
-							<li><a class="link" href="kategori3">kategori 3</a></li>
-							<li><a class="link" href="kategori4">kategori 4</a></li>
-							<li><a class="link" href="kategori5">kategori 5</a></li>
+							<li><a class="link" href="categori1.html">kategori 1</a></li>
+							<li><a class="link" href="categori2">kategori 2</a></li>
+							<li><a class="link" href="categori3">kategori 3</a></li>
+							<li><a class="link" href="categori4">kategori 4</a></li>
+							<li><a class="link" href="categori5">kategori 5</a></li>
 						</ul>
 					</span>
 				</nav>
 			</section>
 		</header>
 		<main>
-			<section>
-				<h2>Hightlights</h2>
-				<figure id="highlights"></figure>
-			</section>
+			<section id="highlights">
+				<h2>Highlights</h2>
+				<div id="gallery-container">
+					<section id="highlightsGallery"></section>
+				  <button id="prev-btn">&lt;</button>
+				  <button id="next-btn">&gt;</button>
+				</div>
+			  </section>
+			
 
-			<section>
-				<h2>Mest Populære</h2>
-				<section id="most-popular"></section>
+			<section class="most-popular-container">
+				<h2>Most Popular</h2>
+				<section id="most-popular">
+				</section>
 			</section>
 		</main>
+		<footer class="site-footer">
+			<div class="footer-content">
+				<div class="copyright">
+					&copy; 2023 MyOwn Shop. 
+				</div>
+				<div class="contact-info">
+					<p>CVR: 12345678</p>
+					<p>123 Street</p> 
+						<p>2000 City</p>
+					<p> +45 456 789 12</p>
+					<p>info@example.com</p>
+				</div>
+				<div class="social-icons">
+					<p>Find us here: </p>
+
+					<a href="#"><i class="fa-brands fa-facebook"></i></i></a>
+					<a href="#"><i class="fab fa-instagram"></i></a>
+					<a href="#"><i class="fab fa-twitter"></i></a>
+					<a href="#"><i class="fab fa-pinterest"></i></a>
+					<a href="#"><i class="fab fa-linkedin"></i></a>
+				</div>
+				<div class="payment-icons">
+					<p>secure payment: </p>
+					<i class="fab fa-cc-visa"></i>
+					<i class="fab fa-cc-mastercard"></i>
+					<i class="fab fa-cc-amex"></i>
+				</div>
+			</div>
+			<div class="disclaimer">
+				<p>All rights reserved. A binding agreement is only established upon
+				payment confirmation.</p>
+				
+			</div>
+		</footer>
 	</body>
 </html>

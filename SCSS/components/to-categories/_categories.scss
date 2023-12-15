@@ -1,0 +1,12 @@
+@use "../../helpers/mixins/mixins";
+@use "../../helpers//variables/variables";
+
+.categori1-container {
+	div {
+		padding: 20px 0;
+		a {
+			text-decoration: none;
+			color: inherit;
+		}
+	}
+}

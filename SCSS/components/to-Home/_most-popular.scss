@@ -1,0 +1,48 @@
+@use "../../helpers/mixins/mixins";
+@use "../../helpers//variables/variables";
+
+#most-popular {
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 20px;
+
+	div {
+		position: relative;
+		background-color: white;
+		border: 1.5px solid variables.$dark88;
+		border-radius: 8px;
+		box-shadow: 4px 7px 24px -9px rgba(0, 0, 0, 0.75);
+		-webkit-box-shadow: 4px 7px 24px -9px rgba(0, 0, 0, 0.75);
+		-moz-box-shadow: 4px 7px 24px -9px rgba(0, 0, 0, 0.75);
+		padding: 10px;
+		a {
+			text-decoration: none;
+			color: inherit;
+			img {
+				width: 100%;
+				aspect-ratio: 1/1;
+				background-color: white;
+			}
+		}
+		h4 {
+			font-size: 1.5em;
+			background-color: white;
+			padding: 10px;
+			font-family: "Handlee", cursive;
+		}
+		p {
+			background-color: white;
+			padding: 10px 10px 50px 10px;
+		}
+		h5 {
+			position: absolute;
+			right: 10px;
+			bottom: 10px;
+			background-color: white;
+			font-family: "Handlee", cursive;
+			font-size: 1.5em;
+
+			text-align: right;
+		}
+	}
+}

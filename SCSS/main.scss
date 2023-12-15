@@ -2,7 +2,7 @@
 @use "./helpers/variables/variables";
 
 @use "./pages/home";
-@use "./pages/kategori1";
+@use "./pages/categori1";
 @use "./pages/login";
 
 @import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
@@ -16,6 +16,7 @@
 	box-sizing: border-box;
 	scroll-behavior: smooth;
 	font-family: "Roboto", sans-serif;
+	background-color: #f1f1f1;
 }
 
 h1 {
