@@ -1,9 +1,13 @@
-@use "./pages/home";
+@use "./helpers/mixins/mixins";
 @use "./helpers/variables/variables";
 
-// fonts
-@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Roboto:wght@100;300;500&display=swap");
-//font-family: 'Handlee', cursive;
+@use "./pages/home";
+@use "./pages/kategori1";
+@use "./pages/login";
+
+@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap");
 //font-family: 'Roboto', sans-serif;
 
 * {
@@ -11,9 +15,16 @@
 	padding: 0;
 	box-sizing: border-box;
 	scroll-behavior: smooth;
-	background-color: black;
+	font-family: "Roboto", sans-serif;
 }
 
+h1 {
+	@include mixins.font-big;
+}
+
+h2 {
+	@include mixins.font-small;
+}
 body {
 	display: flex;
 	flex-direction: column;

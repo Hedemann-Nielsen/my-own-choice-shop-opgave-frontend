@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="./SCSS/main.css" />
 		<!-- Java -->
 		<script src="./assets/javaScript/burgermenu.js" defer></script>
-		<script src="./assets/javaScript/mostpopular.js" defer></script>
+        <script src="./assets/javaScript/login.js" defer></script>
 
 		<script
 			src="https://kit.fontawesome.com/11e7a87280.js"
@@ -38,15 +38,25 @@
 			</section>
 		</header>
 		<main>
-			<section>
-				<h2>Hightlights</h2>
-				<figure id="highlights"></figure>
-			</section>
-
-			<section>
-				<h2>Mest Populære</h2>
-				<section id="most-popular"></section>
-			</section>
+			<section class="user-login">
+                <div class="myForm" id="myForm">
+                    <h2>User sign in</h2>
+                    <form action="" id="loginForm">
+                      <input
+                        autocomplete="email"
+                        type="email"
+                        name="email"
+                        placeholder="Email"
+                      />
+                      <input
+                        autocomplete="new-password"
+                        type="password"
+                        name="password"
+                        placeholder="Password"
+                      />
+                      <input type="submit" value="Login" />
+                    </form>
+            </section>
 		</main>
 	</body>
 </html>
